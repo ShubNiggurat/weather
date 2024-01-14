@@ -1,7 +1,6 @@
 import {windDirections}  from "@/enums/enums"
 
 interface UrlProperty {
-    typeData: string,
     key: string,
     location: string
 }

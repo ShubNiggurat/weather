@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  width: 100%;
+  width: 100dvw;
   height: 100dvh;
   margin: 0 auto;
   font-weight: normal;
@@ -13,16 +13,17 @@
 
 a {
   text-decoration: none;
+  font-size: medium;
 }
 
 header {
   width: 100%;
-  height: 4rem;
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: rgba(0,0,0,.4);
   .header__logo {
     width: 100%;
+    height: 4rem;
     background-image: url("@/assets/weatherLogo.png");
     background-size: contain;
   }
@@ -51,5 +52,9 @@ footer {
     display: flex;
     align-items: center;
   }
+}
+
+.transparent {
+  background-color: rgba(0,0,0,0.1) !important;
 }
 
