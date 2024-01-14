@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CurrentWeatherView from '@/views/CurrentWeatherView.vue'
+import CurrentWeatherView from '@/views/CurrentView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
