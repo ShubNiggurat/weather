@@ -2,20 +2,54 @@
 
 #app {
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   margin: 0 auto;
-  padding: 1rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgba(0,0,0,.4);
+  .header__logo {
+    width: 100%;
+    background-image: url("@/assets/weatherLogo.png");
+    background-size: contain;
+  }
+  .header__nav {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    .header__nav__link {
+      color: var(--vt-c-text-dark-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      &:hover {
+        background-color: rgba(255,255,255,.3);
+      }
+    }
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  .footer__copyright {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
 }
 
