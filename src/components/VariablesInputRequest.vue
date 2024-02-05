@@ -10,7 +10,7 @@
         variant="outlined"
         hint="You can get it on weatherapi.com" 
         :rules="[rules.required]"
-        v-model="key"
+        v-model.trim="key"
       ></v-text-field>
       <!-- add localStore save location search -->
       <v-text-field 
@@ -19,7 +19,7 @@
         variant="outlined" 
         hint="Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name"
         :rules="[rules.required]"
-        v-model="location"
+        v-model.trim="location"
       ></v-text-field>
       <v-btn :disabled="!form" type="submit">Get weather</v-btn>
     </v-form>
